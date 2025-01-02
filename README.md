@@ -51,21 +51,24 @@ Before you begin, ensure you have the following installed:
 
 ### 1. Clone the repository
 
-````bash
+```bash
 git clone https://github.com/yourusername/your-repository.git
 cd your-repository
+```
 
 ### 2. Install dependencies
+
 Backend :
 
 ```bash
 composer install
+```
 
 Frontend :
 
 ```bash
 npm install
-````
+```
 
 ### 3. Set up environment variables
 
