@@ -1,11 +1,14 @@
 <?php
 
 use App\Http\Controllers\Auth\OTPVerificationController;
+use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
+Route::get('/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
