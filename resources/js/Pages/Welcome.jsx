@@ -117,7 +117,7 @@ const Welcome = () => {
                             </span>
                         </a>
                         <a
-                            href="/signup"
+                            href="/register"
                             className="flex items-center justify-center gap-2 py-2.5 px-6 bg-gray-700 text-white rounded-lg text-base font-semibold hover:bg-gray-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg w-48"
                         >
                             Create Account
