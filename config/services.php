@@ -47,4 +47,8 @@ return [
         'redirect' => env('GOOGLE_REDIRECT_URI'),
     ],
 
+    'smsto' => [
+        'key' => env('SMSTO_API_KEY'),
+    ],
+
 ];
