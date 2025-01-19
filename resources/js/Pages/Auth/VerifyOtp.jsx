@@ -4,6 +4,7 @@ import InputError from "@/Components/InputError";
 import InputLabel from "@/Components/InputLabel";
 import PrimaryButton from "@/Components/PrimaryButton";
 import TextInput from "@/Components/TextInput";
+import GuestLayout from "@/Layouts/GuestLayout";
 
 export default function VerifyOtp() {
     const { data, setData, post, processing, errors } = useForm({
@@ -16,7 +17,7 @@ export default function VerifyOtp() {
     };
 
     return (
-        <>
+        <GuestLayout>
             <Head title="Verify OTP" />
 
             <form onSubmit={submit} className="mt-4">
@@ -39,6 +40,6 @@ export default function VerifyOtp() {
                     </PrimaryButton>
                 </div>
             </form>
-        </>
+        </GuestLayout>
     );
 }
